@@ -4,23 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f2f3ef" />
-  <title>Gabriel Bustos | Desarrollo y soluciones de datos</title>
+  <meta name="theme-color" content="#0c0620" />
+  <title>Gabriel Bustos | Desarrollo web, apps y datos en Río Tercero</title>
   <meta name="description"
-    content="Gabriel Bustos desarrolla aplicaciones multiplataforma y soluciones de datos: ETL, tableros dinámicos y GIS para convertir datos en decisiones." />
+    content="Gabriel Bustos desarrolla sitios web, aplicaciones y tableros de datos a medida para negocios y equipos de Río Tercero y la región." />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || "dark" } catch (e) { document.documentElement.dataset.theme = "dark" }</script>
 </head>
 
 <body>
   <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Gabriel Bustos, inicio"><img src="assets/logo.png"
-        alt="Logo Gabriel Bustos" width="34" height="34" />
+    <a class="brand" href="#inicio" aria-label="Gabriel Bustos, inicio"><img src="assets/logo-header.png"
+        alt="Logo Gabriel Bustos" width="56" height="44" />
       <span>Gabriel Bustos</span></a>
     <button class="nav-toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
       <span></span>
@@ -29,91 +30,68 @@
       <a href="#inicio">Inicio</a>
       <a href="#soluciones">Qué hago</a>
       <a href="#proyectos">Proyectos</a>
-      <a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a>
+      <a class="nav-contact" href="#contacto">Hablemos</a>
+      <button class="theme-toggle" type="button" aria-label="Cambiar a tema claro"><span
+          aria-hidden="true"></span></button>
     </nav>
   </header>
 
   <main>
     <section class="hero" id="inicio">
+      <canvas id="bg-canvas" aria-hidden="true"></canvas>
       <div class="hero-copy">
-        <h1>Los datos tienen<br />más para <span>contar.</span></h1>
+        <h1>¡Hola!<br />soy <span>Gabriel</span></h1>
         <p class="hero-lead">
-          Transformo datos crudos en información útil para que los equipos
-          trabajen mejor y decidan con más claridad.
-        </p>
-        <p class="hero-detail">
-          Desarrollo aplicaciones multiplataforma y soluciones de datos: desde
-          procesos ETL hasta tableros dinámicos y análisis GIS.
+          Creo sitios web, aplicaciones y tableros de datos a medida, para que
+          tu negocio o equipo trabaje con más claridad.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#proyectos">Ver proyectos <span aria-hidden="true">↘</span></a>
-          <a class="text-link" href="#contacto">Conversemos <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="#proyectos">Ver qué puedo hacer</a>
+          <a class="text-link" href="#contacto">Contame tu idea</a>
         </div>
       </div>
 
-      <img src="./assets/hero-image.png" alt="hero-image" width="500" />
-      <a class="scroll-note" href="#soluciones"><span></span> DESLIZÁ PARA EXPLORAR</a>
+      <img src="./assets/perfil.png" alt="Gabriel Bustos" width="420" height="420" />
     </section>
 
     <section class="solutions section-wrap" id="soluciones">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">EN QUÉ PUEDO APORTAR</p>
-          <h2>
-            Menos tareas manuales.<br /><span>Mejores decisiones.</span>
-          </h2>
+          <p class="eyebrow">EN QUÉ PUEDO AYUDARTE</p>
+          <h2>Tecnología a medida,<br /><span>sin vueltas.</span></h2>
         </div>
-        <p class="section-intro">
-          Una mirada que conecta tecnología, procesos y datos para resolver
-          necesidades concretas.
-        </p>
       </div>
       <div class="solution-grid">
         <article class="solution-item">
           <span class="solution-number">01</span>
-          <div class="solution-icon icon-flow" aria-hidden="true">
-            <i></i><i></i><i></i>
-          </div>
-          <h3>ETL &amp; gestión de datos</h3>
-          <p>
-            Integración, limpieza y transformación para convertir fuentes
-            dispersas en datos confiables y listos para usar.
-          </p>
-          <span class="solution-foot">INTEGRAR / ORDENAR / AUTOMATIZAR</span>
+          <div class="solution-icon icon-app" aria-hidden="true"><i></i></div>
+          <h3>Sitios y aplicaciones</h3>
+          <p>Webs claras y rápidas, y apps para celular, para que tus clientes te encuentren y tu equipo trabaje desde
+            donde esté.</p>
+          <span class="solution-foot">DISEÑAR / CONSTRUIR / PUBLICAR</span>
         </article>
         <article class="solution-item">
           <span class="solution-number">02</span>
-          <div class="solution-icon icon-chart" aria-hidden="true">
-            <i></i><i></i><i></i><i></i>
-          </div>
-          <h3>Tableros dinámicos</h3>
-          <p>
-            Indicadores y visualizaciones interactivas que ayudan a entender
-            qué pasa y dónde conviene actuar.
-          </p>
-          <span class="solution-foot">EXPLORAR / MEDIR / DECIDIR</span>
+          <div class="solution-icon icon-flow" aria-hidden="true"><i></i><i></i><i></i></div>
+          <h3>Automatización de procesos</h3>
+          <p>Planillas, archivos y sistemas que no se hablan entre sí: los conecto y ordeno para ahorrar tareas
+            manuales.</p>
+          <span class="solution-foot">CONECTAR / ORDENAR / AUTOMATIZAR</span>
         </article>
         <article class="solution-item">
           <span class="solution-number">03</span>
-          <div class="solution-icon icon-map" aria-hidden="true">
-            <i></i><i></i><i></i><i></i>
-          </div>
-          <h3>Datos GIS</h3>
-          <p>
-            Análisis con componente geográfico para sumar contexto territorial
-            a la información y descubrir patrones.
+          <div class="solution-icon icon-chart" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <h3>Tableros e informes</h3>
+          <p>Tus números en un solo lugar, con indicadores fáciles de leer para entender qué pasa y decidir qué hacer.
           </p>
-          <span class="solution-foot">UBICAR / CRUZAR / DESCUBRIR</span>
+          <span class="solution-foot">MEDIR / EXPLORAR / DECIDIR</span>
         </article>
         <article class="solution-item">
           <span class="solution-number">04</span>
-          <div class="solution-icon icon-app" aria-hidden="true"><i></i></div>
-          <h3>Aplicaciones multiplataforma</h3>
-          <p>
-            Experiencias digitales que conectan personas, operaciones y datos
-            desde distintos dispositivos.
-          </p>
-          <span class="solution-foot">DISEÑAR / CONSTRUIR / CONECTAR</span>
+          <div class="solution-icon icon-map" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <h3>Mapas y datos geográficos</h3>
+          <p>Ubicá clientes, zonas o recorridos en un mapa y descubrí patrones que en una tabla no se ven.</p>
+          <span class="solution-foot">UBICAR / CRUZAR / DESCUBRIR</span>
         </article>
       </div>
     </section>
@@ -121,13 +99,9 @@
     <section class="projects section-wrap" id="proyectos">
       <div class="section-heading projects-heading">
         <div>
-          <p class="eyebrow">TRABAJO Y EXPERIENCIA</p>
+          <p class="eyebrow">MUESTRAS DE LO QUE PUEDO HACER</p>
           <h2>Ideas que se vuelven<br /><span>herramientas.</span></h2>
         </div>
-        <p class="section-intro">
-          Proyectos de desarrollo junto a experiencia práctica en gestión y
-          análisis de datos.
-        </p>
       </div>
       <div class="project-list">
         <article class="project-row">
@@ -206,16 +180,13 @@
           </div>
           <div class="project-info">
             <div class="project-meta">
-              <span>EXPERIENCIA EN DATOS</span><span>03</span>
+              <span>DATOS Y PROCESOS</span><span>03</span>
             </div>
-            <h3>Del dato a la acción</h3>
-            <p>
-              Experiencia real en manejo de datos, procesos ETL, tableros
-              dinámicos y datos GIS para apoyar procesos más eficientes y
-              decisiones basadas en información.
-            </p>
+            <h3>Del dato al tablero</h3>
+            <p>Un flujo que toma datos de distintas fuentes, los limpia y los deja listos para consultar en tableros y
+              mapas.</p>
             <div class="tags">
-              <span>ETL</span><span>Business Intelligence</span><span>GIS</span>
+              <span>ETL</span><span>Tableros</span><span>GIS</span>
             </div>
           </div>
         </article>
@@ -224,50 +195,201 @@
 
     <section class="approach">
       <div class="approach-inner">
-        <p class="eyebrow">CÓMO PIENSO LOS PROYECTOS</p>
+        <p class="eyebrow">CÓMO TRABAJO</p>
         <h2>
-          No se trata de tener<br />más datos. Se trata de<br /><span>saber qué hacer con ellos.</span>
+          Primero entender.<br />Después construir.<br /><span>Siempre algo útil.</span>
         </h2>
         <div class="approach-steps">
-          <div>
-            <span>01</span>
-            <p>Entender el proceso y el problema real.</p>
+          <div><span>01</span>
+            <p>Escucho tu necesidad y el problema real.</p>
           </div>
-          <div>
-            <span>02</span>
-            <p>Ordenar y transformar los datos disponibles.</p>
+          <div><span>02</span>
+            <p>Propongo una solución simple y la construyo por etapas.</p>
           </div>
-          <div>
-            <span>03</span>
-            <p>Construir una solución útil para el equipo.</p>
+          <div><span>03</span>
+            <p>Te entrego algo que podés usar desde el primer día.</p>
           </div>
         </div>
       </div>
-      <div class="approach-mark" aria-hidden="true">D<br />→<br />A</div>
+      <div class="approach-mark" aria-hidden="true">I<br />→<br />R</div>
     </section>
 
-    <section class="contact section-wrap" id="contacto">
-      <div>
-        <p class="eyebrow">¿TENÉS UN PROCESO PARA MEJORAR?</p>
-        <h2>Hagamos que tus<br /><span>datos trabajen.</span></h2>
+    <section class="certs section-wrap" id="certificados" aria-labelledby="certs-title">
+      <div class="section-heading certs-heading">
+        <div>
+          <p class="eyebrow">FORMACIÓN CONTINUA</p>
+          <h2 id="certs-title">Siempre <span>aprendiendo.</span></h2>
+        </div>
+        <p class="carousel-count" aria-hidden="true"></p>
+      </div>
+      <div class="carousel" role="region" aria-roledescription="carrusel" aria-label="Certificados y cursos">
+        <button class="carousel-btn carousel-prev" type="button" data-dir="prev" aria-label="Certificado anterior">
+          <svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+        </button>
+        <button class="carousel-btn carousel-next" type="button" data-dir="next" aria-label="Certificado siguiente">
+          <svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
+        </button>
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+          <li class="cert-card">
+            <button class="cert-thumb" type="button" data-full="assets/certificados/ia-generativa-unc.jpg" aria-label="Ampliar certificado: IA generativa para desarrolladores">
+              <img src="assets/certificados/ia-generativa-unc.jpg" alt="Certificado de IA generativa para desarrolladores" width="1400" height="969" loading="lazy" draggable="false" />
+              <span class="cert-zoom" aria-hidden="true">Ampliar</span>
+            </button>
+            <div class="cert-body">
+              <div class="cert-meta"><span>UNC CAMPUS NORTE · GOOGLE CLOUD</span><span>2025</span></div>
+              <h3>IA generativa para desarrolladores</h3>
+              <p>Módulo universitario de 27 horas sobre el uso de IA generativa como apoyo en el desarrollo de software.</p>
+              <div class="tags"><span>IA generativa</span><span>Google Cloud</span></div>
+            </div>
+          </li>
+          <li class="cert-card">
+            <button class="cert-thumb" type="button" data-full="assets/certificados/react-typescript-udemy.jpg" aria-label="Ampliar certificado: React y TypeScript: la guía completa">
+              <img src="assets/certificados/react-typescript-udemy.jpg" alt="Certificado de React y TypeScript: la guía completa" width="1400" height="1041" loading="lazy" draggable="false" />
+              <span class="cert-zoom" aria-hidden="true">Ampliar</span>
+            </button>
+            <div class="cert-body">
+              <div class="cert-meta"><span>UDEMY</span><span>2025</span></div>
+              <h3>React y TypeScript: la guía completa</h3>
+              <p>Curso de 58 horas donde construí más de 10 proyectos con React y TypeScript.</p>
+              <div class="tags"><span>React</span><span>TypeScript</span></div>
+            </div>
+          </li>
+          <li class="cert-card">
+            <button class="cert-thumb" type="button" data-full="assets/certificados/js-master-udemy.jpg" aria-label="Ampliar certificado: Máster en JavaScript">
+              <img src="assets/certificados/js-master-udemy.jpg" alt="Certificado de Máster en JavaScript" width="1400" height="1041" loading="lazy" draggable="false" />
+              <span class="cert-zoom" aria-hidden="true">Ampliar</span>
+            </button>
+            <div class="cert-body">
+              <div class="cert-meta"><span>UDEMY</span><span>2020</span></div>
+              <h3>Máster en JavaScript</h3>
+              <p>31 horas recorriendo JavaScript y su ecosistema: jQuery, Angular y Node.js.</p>
+              <div class="tags"><span>JavaScript</span><span>jQuery</span><span>Angular</span><span>Node.js</span></div>
+            </div>
+          </li>
+          <li class="cert-card">
+            <button class="cert-thumb" type="button" data-full="assets/certificados/java-intermedio-proydesa.jpg" aria-label="Ampliar certificado: Java Intermedio v7">
+              <img src="assets/certificados/java-intermedio-proydesa.jpg" alt="Certificado de Java Intermedio v7" width="1400" height="991" loading="lazy" draggable="false" />
+              <span class="cert-zoom" aria-hidden="true">Ampliar</span>
+            </button>
+            <div class="cert-body">
+              <div class="cert-meta"><span>FUNDACIÓN PROYDESA · ORACLE</span><span>2018</span></div>
+              <h3>Java Intermedio v7</h3>
+              <p>Cursada de Java nivel intermedio dentro del programa Oracle Workforce Development.</p>
+              <div class="tags"><span>Java</span></div>
+            </div>
+          </li>
+          <li class="cert-card">
+            <button class="cert-thumb" type="button" data-full="assets/certificados/nobel-hardware-redes.jpg" aria-label="Ampliar certificado: Técnico en hardware de PC y redes">
+              <img src="assets/certificados/nobel-hardware-redes.jpg" alt="Certificado de Técnico en hardware de PC y redes" width="579" height="411" loading="lazy" draggable="false" />
+              <span class="cert-zoom" aria-hidden="true">Ampliar</span>
+            </button>
+            <div class="cert-body">
+              <div class="cert-meta"><span>INSTITUTO NOBEL</span><span>2010</span></div>
+              <h3>Técnico en hardware de PC y redes</h3>
+              <p>Base técnica en hardware de computadoras y redes informáticas: 144 horas cátedra.</p>
+              <div class="tags"><span>Hardware</span><span>Redes</span></div>
+            </div>
+          </li>
+          </ul>
+        </div>
+      </div>
+      <dialog class="cert-dialog" id="cert-dialog" aria-label="Certificado ampliado">
+        <button class="cert-close" type="button" aria-label="Cerrar">
+          <svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" /></svg>
+        </button>
+        <img alt="" />
+        <p class="cert-caption"></p>
+      </dialog>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact-info">
+        <p class="eyebrow">¿TENÉS UNA IDEA O UN PROCESO PARA MEJORAR?</p>
+        <h2>Hagamos que tu idea<br /><span>funcione.</span></h2>
         <p class="contact-copy">
-          Si manejás grandes volúmenes de datos y querés trabajar con más
-          claridad y eficiencia, me interesa conocer tu desafío.
+          Si tenés un negocio, un emprendimiento o una tarea que se haría más
+          fácil con tecnología, contame y vemos cómo resolverla.
         </p>
-        <a class="button button-light" href="mailto:tu-correo@ejemplo.com">Hablemos de tu proyecto <span
-            aria-hidden="true">↗</span></a>
+
+        <div class="contact-actions">
+          <a class="button button-whatsapp" target="_blank" rel="noopener"
+            href="https://wa.me/5493571360449?text=Hola%20Gabriel%2C%20vi%20tu%20portafolio%20y%20quiero%20consultarte%20por...">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+            Escribime por WhatsApp
+          </a>
+        </div>
+
+        <ul class="contact-details">
+          <li>
+            <span class="chip"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="3" />
+                <path d="m3.5 7 8.5 6 8.5-6" />
+              </svg></span>
+            <a href="mailto:gabrielbustosdev@gmail.com">gabrielbustosdev@gmail.com</a>
+          </li>
+          <li>
+            <span class="chip"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z" />
+                <circle cx="12" cy="9.5" r="2.5" />
+              </svg></span>
+            <span>Río Tercero, Córdoba · También trabajo a distancia</span>
+          </li>
+          <li>
+            <span class="chip"><svg class="icon-line" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 7v5l3 2" />
+              </svg></span>
+            <span>Respondo en menos de 24h </span>
+          </li>
+        </ul>
+
+        <span class="contact-links">
+          <a href="https://www.linkedin.com/in/gabrielbustosdev/" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com/gabrielbustosdev" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.921.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+            GitHub
+          </a>
+        </span>
       </div>
-      <div class="contact-side">
-        <span class="contact-index">GB / 2026</span><span
-          class="contact-coordinate">DESARROLLO<br />×<br />DATOS</span><a href="mailto:tu-correo@ejemplo.com"
-          class="contact-email">tu-correo@ejemplo.com ↗</a>
-      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <h3>Dejame tu consulta</h3>
+        <input type="hidden" name="access_key" value="a126a15f-30d4-440e-9102-baee741331c7" />
+        <input type="hidden" name="subject" value="Nueva consulta desde el portafolio" />
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" />
+
+        <label>Nombre
+          <input type="text" name="name" required autocomplete="name" />
+        </label>
+        <label>Email
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label>¿En qué te puedo ayudar?
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+
+        <button class="button button-primary" type="submit">Enviar consulta</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
 
   <footer class="site-footer">
     <a class="footer-brand" href="#inicio">GB</a>
-    <p>Gabriel Bustos · Desarrollo multiplataforma y datos</p>
+    <p>Gabriel Bustos · Desarrollo web, apps y datos · Río Tercero</p>
     <a href="#inicio" class="back-top">VOLVER ARRIBA ↑</a><span>© <span id="year"></span></span>
   </footer>
   <script src="js/script.js"></script>
